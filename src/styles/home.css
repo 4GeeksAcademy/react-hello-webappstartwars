@@ -234,3 +234,33 @@ h4 {
       display: none;
     }
   }
+
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: goldenrod blue; /* Color de la barra de desplazamiento (dorada) y del fondo del track (azul) */
+}
+
+.scroll {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+    height: 2px;
+     display: none;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background-color: rgb(1, 1, 67); /* Color de fondo del track (azul) */
+   
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(224, 249, 2);; /* Color de la barra de desplazamiento (dorada) */
+    border-radius: 10px;
+}
+
+
+  

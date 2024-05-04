@@ -57,6 +57,30 @@
       transform: rotateX(25deg) translateZ(-2500px);
     }
   }
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin; /* Anchura de la barra de desplazamiento en navegadores compatibles */
+}
+
+.scroll { 
+    display: flex;
+    padding-bottom: 10px; /* Espacio inferior para que la barra de desplazamiento no se superponga sobre los elementos */
+}
+
+.scroll::-webkit-scrollbar {
+    height: 8px; /* Altura de la barra de desplazamiento */
+}
+
+.scroll::-webkit-scrollbar-track {  
+    background: black; /* Color de fondo de la barra de desplazamiento */
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background:goldenrod; /* Color del botón de desplazamiento */
+    border-radius: 4px; /* Radio de borde del botón de desplazamiento */
+}
+
   
   
   
